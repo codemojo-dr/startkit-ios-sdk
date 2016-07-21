@@ -1,0 +1,10 @@
+framework module codemojoframework {
+  umbrella header "codemojoframework.h"
+
+  export *
+  module * { export * }
+}
+
+module codemojoframework.Swift {
+    header "codemojoframework-Swift.h"
+}
