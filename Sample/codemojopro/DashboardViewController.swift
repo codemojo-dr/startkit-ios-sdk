@@ -19,10 +19,6 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        refferalcodetxt.text = appDelegate.referralcode
-        
-        
-        
         // Do any additional setup after loading the view.
     }
 
@@ -32,11 +28,22 @@ class DashboardViewController: UIViewController {
         
     }
     
-    @IBAction func calpoint(sender: AnyObject) {
+    @IBAction func gotoReferalPage(sender: AnyObject) {
         
+        let viewcontroller = (self.storyboard?.instantiateViewControllerWithIdentifier("referralview"))! as UIViewController
         
+        self.navigationController?.pushViewController(viewcontroller, animated: true)
         
     }
+    
+    @IBAction func gotoGamificationAchieve(sender: AnyObject) {
+        
+        let viewcontroller = (self.storyboard?.instantiateViewControllerWithIdentifier("gamedemo"))! as UIViewController
+        
+        self.navigationController?.pushViewController(viewcontroller, animated: true)
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

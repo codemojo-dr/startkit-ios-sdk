@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     var referralcode = ""
-
+    
+    var referralurl = ""
+    
+    var userid = ""
+    
+    var Access_token = ""
+    
+    var env_type = 0
+    
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
