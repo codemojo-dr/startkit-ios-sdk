@@ -20,7 +20,7 @@ class GamificationdemoViewController: UIViewController {
 
         let userid = appDelegate.userid
         
-        let log = mojoconfig()
+        let log = Codemojoclient()
         
         log.getBalance(userid,Access_token: self.appDelegate.Access_token, EnviromentType: appDelegate.env_type) {[weak self] (status, total, raw, converted) in
             
@@ -50,7 +50,7 @@ class GamificationdemoViewController: UIViewController {
     
     @IBAction func unoact(sender: AnyObject) {
         
-        let log = mojoconfig()
+        let log = Codemojoclient()
         
         let userid = appDelegate.userid
         
@@ -74,7 +74,7 @@ class GamificationdemoViewController: UIViewController {
     
     @IBAction func startedact(sender: AnyObject) {
         
-        let log = mojoconfig()
+        let log = Codemojoclient()
         
         let userid = appDelegate.userid
         
@@ -98,7 +98,7 @@ class GamificationdemoViewController: UIViewController {
     
     @IBAction func communityact(sender: AnyObject) {
         
-        let log = mojoconfig()
+        let log = Codemojoclient()
         
         let userid = appDelegate.userid
         
@@ -123,7 +123,7 @@ class GamificationdemoViewController: UIViewController {
     
     @IBAction func leaderact(sender: AnyObject) {
         
-        let log = mojoconfig()
+        let log = Codemojoclient()
         
         let userid = appDelegate.userid
         

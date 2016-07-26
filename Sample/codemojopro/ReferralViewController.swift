@@ -30,7 +30,7 @@ class ReferralViewController: UIViewController, UITextFieldDelegate {
         
         entreferraltxt.delegate = self
         
-        let log = mojoconfig()
+        let log = Codemojoclient()
         
         log.getReferral(userid, Access_token: appDelegate.Access_token, EnviromentType: appDelegate.env_type) {[weak self] (status, code, url, friend_earn, you_earn) in
             
@@ -108,7 +108,7 @@ class ReferralViewController: UIViewController, UITextFieldDelegate {
         
         let userid = appDelegate.userid
         
-        let log = mojoconfig()
+        let log = Codemojoclient()
         
         if refcode != "" {
             

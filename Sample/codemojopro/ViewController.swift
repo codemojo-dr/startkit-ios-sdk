@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             let username = value!
             
             NSLog("This is our log")
-            let log = mojoconfig()
+            let log = Codemojoclient()
             
             textfield1.text = ""
 

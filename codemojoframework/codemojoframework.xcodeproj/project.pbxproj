@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		903C9DA71D477D4E00D1F8D3 /* IAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9DA61D477D4E00D1F8D3 /* IAccessToken.swift */; };
+		903C9DA91D477D6400D1F8D3 /* Codemojoclient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9DA81D477D6400D1F8D3 /* Codemojoclient.swift */; };
+		903C9DAE1D477FE300D1F8D3 /* IGamification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9DAD1D477FE300D1F8D3 /* IGamification.swift */; };
+		903C9DB01D47815A00D1F8D3 /* ILoyalty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9DAF1D47815A00D1F8D3 /* ILoyalty.swift */; };
+		903C9DB21D4782BD00D1F8D3 /* IReferral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9DB11D4782BD00D1F8D3 /* IReferral.swift */; };
+		903C9DB41D4783BC00D1F8D3 /* IWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903C9DB31D4783BC00D1F8D3 /* IWallet.swift */; };
 		907D24421D3A01F4009C18B0 /* codemojoframework.h in Headers */ = {isa = PBXBuildFile; fileRef = 907D24411D3A01F4009C18B0 /* codemojoframework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		907D24491D3A01F4009C18B0 /* codemojoframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907D243E1D3A01F4009C18B0 /* codemojoframework.framework */; };
 		907D244E1D3A01F4009C18B0 /* codemojoframeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D244D1D3A01F4009C18B0 /* codemojoframeworkTests.swift */; };
-		907D24591D3A0202009C18B0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D24581D3A0202009C18B0 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,13 +29,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		903C9DA61D477D4E00D1F8D3 /* IAccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAccessToken.swift; sourceTree = "<group>"; };
+		903C9DA81D477D6400D1F8D3 /* Codemojoclient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codemojoclient.swift; sourceTree = "<group>"; };
+		903C9DAD1D477FE300D1F8D3 /* IGamification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGamification.swift; sourceTree = "<group>"; };
+		903C9DAF1D47815A00D1F8D3 /* ILoyalty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ILoyalty.swift; sourceTree = "<group>"; };
+		903C9DB11D4782BD00D1F8D3 /* IReferral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IReferral.swift; sourceTree = "<group>"; };
+		903C9DB31D4783BC00D1F8D3 /* IWallet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWallet.swift; sourceTree = "<group>"; };
 		907D243E1D3A01F4009C18B0 /* codemojoframework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = codemojoframework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		907D24411D3A01F4009C18B0 /* codemojoframework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = codemojoframework.h; sourceTree = "<group>"; };
 		907D24431D3A01F4009C18B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		907D24481D3A01F4009C18B0 /* codemojoframeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codemojoframeworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		907D244D1D3A01F4009C18B0 /* codemojoframeworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codemojoframeworkTests.swift; sourceTree = "<group>"; };
 		907D244F1D3A01F4009C18B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		907D24581D3A0202009C18B0 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				907D24411D3A01F4009C18B0 /* codemojoframework.h */,
-				907D24581D3A0202009C18B0 /* File.swift */,
+				903C9DA61D477D4E00D1F8D3 /* IAccessToken.swift */,
+				903C9DAD1D477FE300D1F8D3 /* IGamification.swift */,
+				903C9DAF1D47815A00D1F8D3 /* ILoyalty.swift */,
+				903C9DB11D4782BD00D1F8D3 /* IReferral.swift */,
+				903C9DB31D4783BC00D1F8D3 /* IWallet.swift */,
+				903C9DA81D477D6400D1F8D3 /* Codemojoclient.swift */,
 				907D24431D3A01F4009C18B0 /* Info.plist */,
 			);
 			path = codemojoframework;
@@ -198,7 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				907D24591D3A0202009C18B0 /* File.swift in Sources */,
+				903C9DB01D47815A00D1F8D3 /* ILoyalty.swift in Sources */,
+				903C9DA91D477D6400D1F8D3 /* Codemojoclient.swift in Sources */,
+				903C9DB41D4783BC00D1F8D3 /* IWallet.swift in Sources */,
+				903C9DA71D477D4E00D1F8D3 /* IAccessToken.swift in Sources */,
+				903C9DB21D4782BD00D1F8D3 /* IReferral.swift in Sources */,
+				903C9DAE1D477FE300D1F8D3 /* IGamification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

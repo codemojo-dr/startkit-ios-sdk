@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9032914C1D4652F500B7C798 /* codemojoframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B662281D461F9E003D1867 /* codemojoframework.framework */; };
-		9032914D1D4652F500B7C798 /* codemojoframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90B662281D461F9E003D1867 /* codemojoframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		903C9DBD1D47880E00D1F8D3 /* codemojoframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903C9DBC1D47880E00D1F8D3 /* codemojoframework.framework */; };
+		903C9DBE1D47880E00D1F8D3 /* codemojoframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 903C9DBC1D47880E00D1F8D3 /* codemojoframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		907D24A61D3A0365009C18B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D24A51D3A0365009C18B0 /* AppDelegate.swift */; };
 		907D24A81D3A0365009C18B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D24A71D3A0365009C18B0 /* ViewController.swift */; };
 		907D24AB1D3A0365009C18B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907D24A91D3A0365009C18B0 /* Main.storyboard */; };
@@ -41,13 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9032914E1D4652F500B7C798 /* Embed Frameworks */ = {
+		903C9DBF1D47880E00D1F8D3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9032914D1D4652F500B7C798 /* codemojoframework.framework in Embed Frameworks */,
+				903C9DBE1D47880E00D1F8D3 /* codemojoframework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		903C9DBC1D47880E00D1F8D3 /* codemojoframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = codemojoframework.framework; sourceTree = "<group>"; };
 		907D24A21D3A0365009C18B0 /* codemojopro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codemojopro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907D24A51D3A0365009C18B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		907D24A71D3A0365009C18B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +72,6 @@
 		907D24CA1D3A0365009C18B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909783871D3A4D6600AE91AC /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		90B662151D45F7A6003D1867 /* GamificationdemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamificationdemoViewController.swift; sourceTree = "<group>"; };
-		90B662281D461F9E003D1867 /* codemojoframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = codemojoframework.framework; sourceTree = "<group>"; };
 		90B6622C1D46285C003D1867 /* Referral-icons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Referral-icons.jpg"; sourceTree = "<group>"; };
 		90B6622E1D462D8A003D1867 /* ReferralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9032914C1D4652F500B7C798 /* codemojoframework.framework in Frameworks */,
+				903C9DBD1D47880E00D1F8D3 /* codemojoframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 		907D24991D3A0365009C18B0 = {
 			isa = PBXGroup;
 			children = (
-				90B662281D461F9E003D1867 /* codemojoframework.framework */,
+				903C9DBC1D47880E00D1F8D3 /* codemojoframework.framework */,
 				907D24A41D3A0365009C18B0 /* codemojopro */,
 				907D24BC1D3A0365009C18B0 /* codemojoproTests */,
 				907D24C71D3A0365009C18B0 /* codemojoproUITests */,
@@ -169,7 +169,7 @@
 				907D249E1D3A0365009C18B0 /* Sources */,
 				907D249F1D3A0365009C18B0 /* Frameworks */,
 				907D24A01D3A0365009C18B0 /* Resources */,
-				9032914E1D4652F500B7C798 /* Embed Frameworks */,
+				903C9DBF1D47880E00D1F8D3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
