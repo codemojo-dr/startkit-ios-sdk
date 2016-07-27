@@ -97,4 +97,14 @@ public class Codemojoclient {
         
     }
     
+    public func claimReferral(customer_id:String, referralcode:String, Access_token:String, EnviromentType:Int, completion: (status: String, code:String, url: String, friend_earn: String, you_earn: String) -> Void) {
+        
+        let Referral = IReferral()
+        
+        Referral.claimReferral(customer_id, Access_token: Access_token, EnviromentType: EnviromentType) { (status, code, url, friend_earn, you_earn) in
+            completion(status: status, code: code, url: url, friend_earn: friend_earn, you_earn: you_earn)
+        }
+        
+    }
+    
 }
