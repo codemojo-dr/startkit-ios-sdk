@@ -38,16 +38,15 @@ public class IReferral {
         
         request.HTTPMethod = "PUT"
         
-        let session = NSURLSession(configuration:NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: nil, delegateQueue: nil)
-        
         request.setValue("Bearer "+Access_token, forHTTPHeaderField: "Authorization")
         
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
+        
+        
+        let manager = APIManager()
+        
+        manager.Start(request) { (data, response, error) in
             
             guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
                 
                 completion(status: "Fail", code: "", url: "", friend_earn: "", you_earn: "")
                 
@@ -56,7 +55,6 @@ public class IReferral {
             
             do {
                 if let responseObject = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? [String: AnyObject] {
-                    print("response \(responseObject)")
                     
                     if responseObject["results"] != nil {
                         
@@ -67,8 +65,6 @@ public class IReferral {
                             let code = results.objectForKey("code") as! String
                             
                             let url = results.objectForKey("url") as! String
-                            
-                            print("code \(code)")
                             
                             if results.objectForKey("reward") != nil {
                                 
@@ -98,16 +94,12 @@ public class IReferral {
                     
                 }
             } catch {
-                print(error)
-                print(NSString(data: data!, encoding: NSUTF8StringEncoding))
                 
                 completion(status: "Fail", code: "", url: "", friend_earn: "", you_earn: "")
                 
             }
             
         }
-        
-        task.resume()
         
     }
     
@@ -129,20 +121,19 @@ public class IReferral {
         
         let url:NSURL = NSURL(string: urlString+"\(URL)")!
         
-        let session = NSURLSession.sharedSession()
-        
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "GET"
         request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
         
         request.setValue("Bearer "+Access_token, forHTTPHeaderField: "Authorization")
         
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
+        
+        
+        let manager = APIManager()
+        
+        manager.Start(request) { (data, response, error) in
             
             guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
                 
                 completion(status: "Fail", message: "")
                 
@@ -151,7 +142,6 @@ public class IReferral {
             
             do {
                 if let responseObject = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? [String: AnyObject] {
-                    print("response \(responseObject)")
                     
                     if responseObject["status"] != nil {
                         
@@ -176,8 +166,6 @@ public class IReferral {
                     
                 }
             } catch {
-                print(error)
-                print(NSString(data: data!, encoding: NSUTF8StringEncoding))
                 
                 completion(status: "Fail", message: "")
                 
@@ -185,7 +173,6 @@ public class IReferral {
             
         }
         
-        task.resume()
     }
     
     public func claimReferral(customer_id:String, Access_token:String, EnviromentType:Int, completion: (status: String, code:String, url: String, friend_earn: String, you_earn: String) -> Void) {
@@ -208,16 +195,15 @@ public class IReferral {
         
         request.HTTPMethod = "PUT"
         
-        let session = NSURLSession(configuration:NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: nil, delegateQueue: nil)
-        
         request.setValue("Bearer "+Access_token, forHTTPHeaderField: "Authorization")
         
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
+        
+        
+        let manager = APIManager()
+        
+        manager.Start(request) { (data, response, error) in
             
             guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
                 
                 completion(status: "Fail", code: "", url: "", friend_earn: "", you_earn: "")
                 
@@ -226,7 +212,6 @@ public class IReferral {
             
             do {
                 if let responseObject = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? [String: AnyObject] {
-                    print("response \(responseObject)")
                     
                     if responseObject["results"] != nil {
                         
@@ -237,8 +222,6 @@ public class IReferral {
                             let code = results.objectForKey("code") as! String
                             
                             let url = results.objectForKey("url") as! String
-                            
-                            print("code \(code)")
                             
                             if results.objectForKey("reward") != nil {
                                 
@@ -268,16 +251,12 @@ public class IReferral {
                     
                 }
             } catch {
-                print(error)
-                print(NSString(data: data!, encoding: NSUTF8StringEncoding))
                 
                 completion(status: "Fail", code: "", url: "", friend_earn: "", you_earn: "")
                 
             }
             
         }
-        
-        task.resume()
         
     }
     

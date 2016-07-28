@@ -16,6 +16,10 @@
 		907D24421D3A01F4009C18B0 /* codemojoframework.h in Headers */ = {isa = PBXBuildFile; fileRef = 907D24411D3A01F4009C18B0 /* codemojoframework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		907D24491D3A01F4009C18B0 /* codemojoframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 907D243E1D3A01F4009C18B0 /* codemojoframework.framework */; };
 		907D244E1D3A01F4009C18B0 /* codemojoframeworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D244D1D3A01F4009C18B0 /* codemojoframeworkTests.swift */; };
+		90CE73F31D4A232700668B40 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE73F21D4A232700668B40 /* NetworkManager.swift */; };
+		90CE74001D4A398700668B40 /* Referral-icons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90CE73FF1D4A398700668B40 /* Referral-icons.jpg */; };
+		90CE74161D4A43FE00668B40 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90CE74151D4A43FE00668B40 /* Storyboard.storyboard */; };
+		90CE74181D4A444100668B40 /* ReferralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CE74171D4A444100668B40 /* ReferralViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 		907D24481D3A01F4009C18B0 /* codemojoframeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codemojoframeworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		907D244D1D3A01F4009C18B0 /* codemojoframeworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codemojoframeworkTests.swift; sourceTree = "<group>"; };
 		907D244F1D3A01F4009C18B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90CE73F21D4A232700668B40 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		90CE73FF1D4A398700668B40 /* Referral-icons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Referral-icons.jpg"; path = "Images/Referral-icons.jpg"; sourceTree = "<group>"; };
+		90CE74151D4A43FE00668B40 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = Stroyboard/Storyboard.storyboard; sourceTree = "<group>"; };
+		90CE74171D4A444100668B40 /* ReferralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferralViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 		907D24401D3A01F4009C18B0 /* codemojoframework */ = {
 			isa = PBXGroup;
 			children = (
+				90CE741D1D4A4B1C00668B40 /* Images */,
 				907D24411D3A01F4009C18B0 /* codemojoframework.h */,
 				903C9DA61D477D4E00D1F8D3 /* IAccessToken.swift */,
 				903C9DAD1D477FE300D1F8D3 /* IGamification.swift */,
@@ -90,6 +99,9 @@
 				903C9DB11D4782BD00D1F8D3 /* IReferral.swift */,
 				903C9DB31D4783BC00D1F8D3 /* IWallet.swift */,
 				903C9DA81D477D6400D1F8D3 /* Codemojoclient.swift */,
+				90CE73F21D4A232700668B40 /* NetworkManager.swift */,
+				90CE74171D4A444100668B40 /* ReferralViewController.swift */,
+				90CE74151D4A43FE00668B40 /* Storyboard.storyboard */,
 				907D24431D3A01F4009C18B0 /* Info.plist */,
 			);
 			path = codemojoframework;
@@ -102,6 +114,14 @@
 				907D244F1D3A01F4009C18B0 /* Info.plist */,
 			);
 			path = codemojoframeworkTests;
+			sourceTree = "<group>";
+		};
+		90CE741D1D4A4B1C00668B40 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				90CE73FF1D4A398700668B40 /* Referral-icons.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +216,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90CE74001D4A398700668B40 /* Referral-icons.jpg in Resources */,
+				90CE74161D4A43FE00668B40 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +236,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				903C9DB01D47815A00D1F8D3 /* ILoyalty.swift in Sources */,
+				90CE74181D4A444100668B40 /* ReferralViewController.swift in Sources */,
 				903C9DA91D477D6400D1F8D3 /* Codemojoclient.swift in Sources */,
 				903C9DB41D4783BC00D1F8D3 /* IWallet.swift in Sources */,
+				90CE73F31D4A232700668B40 /* NetworkManager.swift in Sources */,
 				903C9DA71D477D4E00D1F8D3 /* IAccessToken.swift in Sources */,
 				903C9DB21D4782BD00D1F8D3 /* IReferral.swift in Sources */,
 				903C9DAE1D477FE300D1F8D3 /* IGamification.swift in Sources */,

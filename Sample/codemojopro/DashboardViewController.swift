@@ -19,6 +19,14 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let log = Codemojoclient()
+        
+        let userid = appDelegate.userid
+        
+        log.claimReferral(userid, referralcode: "", Access_token: self.appDelegate.Access_token, EnviromentType: appDelegate.env_type) { (status, code, url, friend_earn, you_earn) in
+            
+        }
+        
         // Do any additional setup after loading the view.
     }
 
@@ -30,7 +38,20 @@ class DashboardViewController: UIViewController {
     
     @IBAction func gotoReferalPage(sender: AnyObject) {
         
-        let viewcontroller = (self.storyboard?.instantiateViewControllerWithIdentifier("referralview"))! as UIViewController
+        // call framework's viewcontroller for referral view
+        
+        let frameworkBundle = NSBundle(identifier: "com.abservetech.codemojoframework")
+        let storyboard = UIStoryboard(name: "Storyboard", bundle: frameworkBundle)
+        
+        let viewcontroller = (storyboard.instantiateViewControllerWithIdentifier("referralview")) as UIViewController
+        
+        // pass data to framework
+        
+        userid = appDelegate.userid
+        Access_token = appDelegate.Access_token
+        env_type = appDelegate.env_type
+        
+        ////////////////////////
         
         self.navigationController?.pushViewController(viewcontroller, animated: true)
         

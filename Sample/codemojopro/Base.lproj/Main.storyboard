@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7VI-j1-7l2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7VI-j1-7l2">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -187,13 +187,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wallet Balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ1-7O-3on">
                                         <rect key="frame" x="8" y="61" width="304" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="pts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUY-3e-Jth">
                                         <rect key="frame" x="8" y="110" width="304" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click on the button Number of times as mentioned to unlock an achievement" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0q-l0-gZ2">
@@ -263,141 +263,6 @@
             </objects>
             <point key="canvasLocation" x="1256" y="334"/>
         </scene>
-        <!--Referral View Controller-->
-        <scene sceneID="5cc-nW-tZ8">
-            <objects>
-                <viewController storyboardIdentifier="referralview" id="2gR-Xo-9xR" customClass="ReferralViewController" customModule="codemojopro" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aGv-gv-PH5"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ite-gb-YvG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mAV-iD-JEF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKC-ZP-MZ2">
-                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKu-Xv-NEs">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Referral-icons.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1Xs-dj-dmf">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="215"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="215" id="swj-2P-QtM"/>
-                                                </constraints>
-                                            </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="34534543" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CcD-Hv-st1">
-                                                <rect key="frame" x="67" y="81" width="187" height="37"/>
-                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.68133081900000003" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="187" id="4Hh-Ko-vPV"/>
-                                                    <constraint firstAttribute="height" constant="37" id="oRL-jg-F7M"/>
-                                                </constraints>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your friend will get Rs. and you will get Rs. after their first transaction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydk-bA-NZW">
-                                                <rect key="frame" x="0.0" y="220" width="320" height="35"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFb-fq-94j">
-                                                <rect key="frame" x="67" y="348" width="187" height="30"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.34781788790000001" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="iw7-2J-dak"/>
-                                                </constraints>
-                                                <state key="normal" title="INVITE FRIENDS">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="inivitefrnds:" destination="2gR-Xo-9xR" eventType="touchUpInside" id="OWH-O1-HLc"/>
-                                                </connections>
-                                            </button>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Have a Referral code?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aPD-jf-Kdp">
-                                                <rect key="frame" x="39" y="393" width="187" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="7lL-HH-ujv"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaL-tt-JFH">
-                                                <rect key="frame" x="10" y="0.0" width="46" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="46" id="2xx-vq-Cz8"/>
-                                                    <constraint firstAttribute="height" constant="30" id="wGA-Wb-nR7"/>
-                                                </constraints>
-                                                <state key="normal" title="Exit"/>
-                                                <connections>
-                                                    <action selector="exitact:" destination="2gR-Xo-9xR" eventType="touchUpInside" id="WNV-zA-P7N"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Un-LY-d5t">
-                                                <rect key="frame" x="257" y="393" width="46" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="QEq-Xu-Co9"/>
-                                                    <constraint firstAttribute="width" constant="46" id="QrX-Lw-yPk"/>
-                                                </constraints>
-                                                <state key="normal" title="Done"/>
-                                                <connections>
-                                                    <action selector="usereferralact:" destination="2gR-Xo-9xR" eventType="touchUpInside" id="ls0-6v-CXH"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="7Un-LY-d5t" secondAttribute="bottom" constant="37" id="45n-mq-OaQ"/>
-                                            <constraint firstItem="UaL-tt-JFH" firstAttribute="leading" secondItem="iKu-Xv-NEs" secondAttribute="leading" constant="10" id="4eo-Ya-7DS"/>
-                                            <constraint firstAttribute="trailing" secondItem="PFb-fq-94j" secondAttribute="trailing" constant="66" id="5Zv-n5-v2m"/>
-                                            <constraint firstAttribute="trailing" secondItem="7Un-LY-d5t" secondAttribute="trailing" constant="17" id="6gG-1i-vUp"/>
-                                            <constraint firstAttribute="bottom" secondItem="aPD-jf-Kdp" secondAttribute="bottom" constant="37" id="FHb-56-q8E"/>
-                                            <constraint firstItem="UaL-tt-JFH" firstAttribute="top" secondItem="iKu-Xv-NEs" secondAttribute="top" id="G4l-CD-xPn"/>
-                                            <constraint firstItem="aPD-jf-Kdp" firstAttribute="leading" secondItem="iKu-Xv-NEs" secondAttribute="leading" constant="39" id="Nag-BV-tMu"/>
-                                            <constraint firstItem="1Xs-dj-dmf" firstAttribute="leading" secondItem="iKu-Xv-NEs" secondAttribute="leading" id="OXx-Up-kqD"/>
-                                            <constraint firstAttribute="trailing" secondItem="aPD-jf-Kdp" secondAttribute="trailing" constant="94" id="Wxc-1r-hX9"/>
-                                            <constraint firstItem="aPD-jf-Kdp" firstAttribute="top" secondItem="PFb-fq-94j" secondAttribute="bottom" constant="15" id="YcU-Ld-KkB"/>
-                                            <constraint firstItem="CcD-Hv-st1" firstAttribute="top" secondItem="iKu-Xv-NEs" secondAttribute="top" constant="81" id="a7h-5u-Z1M"/>
-                                            <constraint firstItem="CcD-Hv-st1" firstAttribute="centerX" secondItem="iKu-Xv-NEs" secondAttribute="centerX" id="rDR-mx-ePX"/>
-                                            <constraint firstItem="PFb-fq-94j" firstAttribute="leading" secondItem="iKu-Xv-NEs" secondAttribute="leading" constant="67" id="sJ1-UK-3D3"/>
-                                            <constraint firstItem="1Xs-dj-dmf" firstAttribute="top" secondItem="iKu-Xv-NEs" secondAttribute="top" id="vsq-LS-1Oc"/>
-                                            <constraint firstAttribute="trailing" secondItem="1Xs-dj-dmf" secondAttribute="trailing" id="xnx-fb-cci"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="iKu-Xv-NEs" firstAttribute="top" secondItem="cKC-ZP-MZ2" secondAttribute="top" id="HxR-qV-Ibj"/>
-                                    <constraint firstAttribute="bottom" secondItem="iKu-Xv-NEs" secondAttribute="bottom" id="IxH-Ed-tFG"/>
-                                    <constraint firstItem="iKu-Xv-NEs" firstAttribute="height" secondItem="cKC-ZP-MZ2" secondAttribute="height" id="Onu-4s-4Qh"/>
-                                    <constraint firstItem="iKu-Xv-NEs" firstAttribute="leading" secondItem="cKC-ZP-MZ2" secondAttribute="leading" id="eXN-Xt-UH1"/>
-                                    <constraint firstAttribute="trailing" secondItem="iKu-Xv-NEs" secondAttribute="trailing" id="pR9-GA-yex"/>
-                                    <constraint firstItem="iKu-Xv-NEs" firstAttribute="width" secondItem="cKC-ZP-MZ2" secondAttribute="width" id="uYX-2h-b2l"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Ite-gb-YvG" firstAttribute="top" secondItem="cKC-ZP-MZ2" secondAttribute="bottom" id="0jc-HB-85h"/>
-                            <constraint firstItem="cKC-ZP-MZ2" firstAttribute="top" secondItem="aGv-gv-PH5" secondAttribute="bottom" id="QyI-k7-geC"/>
-                            <constraint firstItem="cKC-ZP-MZ2" firstAttribute="leading" secondItem="mAV-iD-JEF" secondAttribute="leading" id="nDn-m0-XFV"/>
-                            <constraint firstAttribute="trailing" secondItem="cKC-ZP-MZ2" secondAttribute="trailing" id="xen-P9-shG"/>
-                        </constraints>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="earnlabel" destination="ydk-bA-NZW" id="6bf-k2-mH0"/>
-                        <outlet property="entreferraltxt" destination="aPD-jf-Kdp" id="MEQ-Zz-bMo"/>
-                        <outlet property="referraltext" destination="CcD-Hv-st1" id="BHh-dm-w46"/>
-                        <outlet property="scrollview" destination="cKC-ZP-MZ2" id="2bk-m5-mmK"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dyd-eM-jem" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1594" y="334"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="APa-K2-kgr">
             <objects>
@@ -418,7 +283,4 @@
             <point key="canvasLocation" x="142" y="334"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Referral-icons.jpg" width="300" height="290"/>
-    </resources>
 </document>

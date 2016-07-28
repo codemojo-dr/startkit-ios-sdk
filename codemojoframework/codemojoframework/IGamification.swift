@@ -36,20 +36,19 @@ public class IGamification {
         
         let url:NSURL = NSURL(string: urlString+"\(URL)")!
         
-        let session = NSURLSession.sharedSession()
-        
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "GET"
         request.cachePolicy = NSURLRequestCachePolicy.ReloadIgnoringCacheData
         
         request.setValue("Bearer "+Access_token, forHTTPHeaderField: "Authorization")
         
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
+        
+        
+        let manager = APIManager()
+        
+        manager.Start(request) { (data, response, error) in
             
             guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
                 
                 completion(status: "Fail", total: 0)
                 
@@ -58,8 +57,7 @@ public class IGamification {
             
             do {
                 if let responseObject = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? [String: AnyObject] {
-                    print("response \(responseObject)")
-                    
+                   
                     if responseObject["results"] != nil {
                         
                         let results = responseObject["results"] as! NSDictionary
@@ -67,8 +65,6 @@ public class IGamification {
                         if results.objectForKey("total") != nil {
                             
                             let total = results.objectForKey("total") as! NSNumber
-                            
-                            print("total \(total)")
                             
                             completion(status: "Success", total: total as Int)
                             
@@ -84,8 +80,6 @@ public class IGamification {
                     
                 }
             } catch {
-                print(error)
-                print(NSString(data: data!, encoding: NSUTF8StringEncoding))
                 
                 completion(status: "Fail", total: 0)
                 
@@ -93,7 +87,6 @@ public class IGamification {
             
         }
         
-        task.resume()
     }
     
     public func addAction(customer_id:String, Access_token:String, EnviromentType:Int, action_id:String, platform_id:String, completion: (status: String, total: Int) -> Void) {
@@ -116,20 +109,19 @@ public class IGamification {
         
         request.HTTPMethod = "PUT"
         
-        let session = NSURLSession(configuration:NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: nil, delegateQueue: nil)
-        
         let paramString = "customer_id=\(customer_id)&action_id=\(action_id)&platform_id=\(platform_id)"
         request.HTTPBody = paramString.dataUsingEncoding(NSUTF8StringEncoding)
         
         request.setValue("Bearer "+Access_token, forHTTPHeaderField: "Authorization")
         
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
+        
+        
+        let manager = APIManager()
+        
+        manager.Start(request) { (data, response, error) in
             
             guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
-                
+               
                 completion(status: "Fail", total: 0)
                 
                 return
@@ -137,7 +129,6 @@ public class IGamification {
             
             do {
                 if let responseObject = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? [String: AnyObject] {
-                    print("response \(responseObject)")
                     
                     if responseObject["results"] != nil {
                         
@@ -146,8 +137,6 @@ public class IGamification {
                         if results.objectForKey("total") != nil {
                             
                             let total = results.objectForKey("total") as! NSNumber
-                            
-                            print("total \(total)")
                             
                             completion(status: "Success", total: total as Int)
                             
@@ -163,16 +152,12 @@ public class IGamification {
                     
                 }
             } catch {
-                print(error)
-                print(NSString(data: data!, encoding: NSUTF8StringEncoding))
                 
                 completion(status: "Fail", total: 0)
                 
             }
             
         }
-        
-        task.resume()
         
     }
     
@@ -196,19 +181,18 @@ public class IGamification {
         
         request.HTTPMethod = "PUT"
         
-        let session = NSURLSession(configuration:NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: nil, delegateQueue: nil)
-        
         let paramString = "customer_id=\(customer_id)&action_id=\(Action_id)&category_id=\(category_id)"
         request.HTTPBody = paramString.dataUsingEncoding(NSUTF8StringEncoding)
         
         request.setValue("Bearer "+Access_token, forHTTPHeaderField: "Authorization")
         
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
+        
+        
+        let manager = APIManager()
+        
+        manager.Start(request) { (data, response, error) in
             
             guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
                 
                 completion(status: "Fail", total: 0)
                 
@@ -217,8 +201,7 @@ public class IGamification {
             
             do {
                 if let responseObject = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? [String: AnyObject] {
-                    print("response \(responseObject)")
-                    
+                   
                     if responseObject["results"] != nil {
                         
                         let results = responseObject["results"] as! NSDictionary
@@ -226,8 +209,6 @@ public class IGamification {
                         if results.objectForKey("total") != nil {
                             
                             let total = results.objectForKey("total") as! NSNumber
-                            
-                            print("total \(total)")
                             
                             completion(status: "Success", total: total as Int)
                             
@@ -243,16 +224,12 @@ public class IGamification {
                     
                 }
             } catch {
-                print(error)
-                print(NSString(data: data!, encoding: NSUTF8StringEncoding))
                 
                 completion(status: "Fail", total: 0)
                 
             }
             
         }
-        
-        task.resume()
         
     }
     

@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9pIoIXVL7iHGNQI4lYg6FkpR/NU=
+		vL1ljW7erumHyj0lD0jCkVIT1NU=
 		</data>
 		<key>Modules/codemojoframework.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/codemojoframework.swiftmodule/arm.swiftmodule</key>
 		<data>
-		vgoDzDsCMutyGtxEbPfbKO1lsdI=
+		3J5BFkij1nI3IKSq8blL8leyKbM=
 		</data>
 		<key>Modules/codemojoframework.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,43 +30,152 @@
 		</data>
 		<key>Modules/codemojoframework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		WZJAzh+qaw4b66mPUmmp6IPykSA=
+		cTlLd22/d7Zi3WDjN2sGcE7Er3g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		/7ShGyv+gAIpHBoJEpqUBeGNM6Q=
+		</data>
+		<key>Referral-icons.jpg</key>
+		<data>
+		JZrzBgc6MpyWZrcUuLokWHByylc=
+		</data>
+		<key>Storyboard.storyboardc/Info.plist</key>
+		<data>
+		yKVM//LICB85DYSTtJyYBWXnt1U=
+		</data>
+		<key>Storyboard.storyboardc/pAF-fc-onr-view-56U-wS-rpH.nib</key>
+		<data>
+		WiPA7peXvGsLY9Zh6n1jqWoMYxk=
+		</data>
+		<key>Storyboard.storyboardc/referralview.nib</key>
+		<data>
+		qzt/3sf+CVN8wx69EskvSVxyrs4=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/codemojoframework-Swift.h</key>
-		<data>
-		iZ0p4ETGiHGHsyB+ARNvtYaUckw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			iZ0p4ETGiHGHsyB+ARNvtYaUckw=
+			</data>
+			<key>hash2</key>
+			<data>
+			zx9+NsTcEQEgcGXb18XTP7cZ2UWpOTg2RsMCdm/f6X0=
+			</data>
+		</dict>
 		<key>Headers/codemojoframework.h</key>
-		<data>
-		mKK/OTQZyatbU/D2/FS+LHC+Vh0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			mKK/OTQZyatbU/D2/FS+LHC+Vh0=
+			</data>
+			<key>hash2</key>
+			<data>
+			0LtRxQn7OQ80MHsSfNDlvXpKSYCnoMKxH1CpU0irpzo=
+			</data>
+		</dict>
 		<key>Modules/codemojoframework.swiftmodule/arm.swiftdoc</key>
-		<data>
-		0j7CQBuOX19jPopZjne06taEfgQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			0j7CQBuOX19jPopZjne06taEfgQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			kfdC9q/xMscpnfDRrZSyQyxzlPE3R9rSGu3TVKAYltA=
+			</data>
+		</dict>
 		<key>Modules/codemojoframework.swiftmodule/arm.swiftmodule</key>
-		<data>
-		vgoDzDsCMutyGtxEbPfbKO1lsdI=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			3J5BFkij1nI3IKSq8blL8leyKbM=
+			</data>
+			<key>hash2</key>
+			<data>
+			HLqvju2hoMSsLL9C2+0d3SGIn2FxRfnODP66fqcU1jw=
+			</data>
+		</dict>
 		<key>Modules/codemojoframework.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		/cfOduQw89Xt+4EOYoAzGdX0zeM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			/cfOduQw89Xt+4EOYoAzGdX0zeM=
+			</data>
+			<key>hash2</key>
+			<data>
+			1dQOgJjIuevkEle6iLqaoUmW7NTpylFNzupErVkQ8IY=
+			</data>
+		</dict>
 		<key>Modules/codemojoframework.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		WZJAzh+qaw4b66mPUmmp6IPykSA=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			cTlLd22/d7Zi3WDjN2sGcE7Er3g=
+			</data>
+			<key>hash2</key>
+			<data>
+			cP6Bfd3p/Hpk0ARE4tY2k2pPI9irpdE0358QXpsEAWo=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		/7ShGyv+gAIpHBoJEpqUBeGNM6Q=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			/7ShGyv+gAIpHBoJEpqUBeGNM6Q=
+			</data>
+			<key>hash2</key>
+			<data>
+			90agToZSnZxKDR1Yt2ewbErB9sEC27vWEHlVL5doFaE=
+			</data>
+		</dict>
+		<key>Referral-icons.jpg</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JZrzBgc6MpyWZrcUuLokWHByylc=
+			</data>
+			<key>hash2</key>
+			<data>
+			fJ3Ko51UydgnhA/xv+Ff2jNgHuDaPTVZpItLWx+9Xbk=
+			</data>
+		</dict>
+		<key>Storyboard.storyboardc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yKVM//LICB85DYSTtJyYBWXnt1U=
+			</data>
+			<key>hash2</key>
+			<data>
+			63GE4ojBULcTfCJcKmS7TZ9sPEx3c5vjFoquNFopbTw=
+			</data>
+		</dict>
+		<key>Storyboard.storyboardc/pAF-fc-onr-view-56U-wS-rpH.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WiPA7peXvGsLY9Zh6n1jqWoMYxk=
+			</data>
+			<key>hash2</key>
+			<data>
+			ifS0bxc01zq04cXbWNG1kUJPIMkTE7XOdpQJnRLg5Nk=
+			</data>
+		</dict>
+		<key>Storyboard.storyboardc/referralview.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qzt/3sf+CVN8wx69EskvSVxyrs4=
+			</data>
+			<key>hash2</key>
+			<data>
+			fnRrr+sWKJAclEeuL3qONxiRxpBgeZY31Wq7OEoxVY8=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>

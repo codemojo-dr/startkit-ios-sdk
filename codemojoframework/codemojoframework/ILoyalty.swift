@@ -38,19 +38,18 @@ public class ILoyalty {
         
         request.HTTPMethod = "PUT"
         
-        let session = NSURLSession(configuration:NSURLSessionConfiguration.defaultSessionConfiguration(), delegate: nil, delegateQueue: nil)
-        
         let paramString = "customer_id=\(customer_id)&transaction=150.0&transaction_id=100"
         request.HTTPBody = paramString.dataUsingEncoding(NSUTF8StringEncoding)
         
         request.setValue("Bearer "+Access_token, forHTTPHeaderField: "Authorization")
         
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
+        
+        
+        let manager = APIManager()
+        
+        manager.Start(request) { (data, response, error) in
             
             guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
                 
                 completion(status: "Fail", total: 0)
                 
@@ -59,7 +58,6 @@ public class ILoyalty {
             
             do {
                 if let responseObject = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? [String: AnyObject] {
-                    print("response \(responseObject)")
                     
                     if responseObject["results"] != nil {
                         
@@ -68,8 +66,6 @@ public class ILoyalty {
                         if results.objectForKey("total") != nil {
                             
                             let total = results.objectForKey("total") as! NSNumber
-                            
-                            print("total \(total)")
                             
                             completion(status: "Success", total: total as Int)
                             
@@ -85,16 +81,12 @@ public class ILoyalty {
                     
                 }
             } catch {
-                print(error)
-                print(NSString(data: data!, encoding: NSUTF8StringEncoding))
                 
                 completion(status: "Fail", total: 0)
                 
             }
             
         }
-        
-        task.resume()
         
     }
     

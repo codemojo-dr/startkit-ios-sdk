@@ -36,7 +36,6 @@ public class IWallet {
         
         let url:NSURL = NSURL(string: urlString+"\(URL)")!
         
-        let session = NSURLSession.sharedSession()
         
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "GET"
@@ -44,14 +43,12 @@ public class IWallet {
         
         request.setValue("Bearer "+Access_token, forHTTPHeaderField: "Authorization")
         
-        print("Bearer \(Access_token)")
         
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
+        let manager = APIManager()
+        
+        manager.Start(request) { (data, response, error) in
             
             guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
-                print("error")
                 
                 completion(status: "Fail", total: 0, raw: 0, converted: 0)
                 
@@ -60,7 +57,6 @@ public class IWallet {
             
             do {
                 if let responseObject = try NSJSONSerialization.JSONObjectWithData(data!, options: []) as? [String: AnyObject] {
-                    print("response \(responseObject)")
                     
                     if responseObject["results"] != nil {
                         
@@ -76,8 +72,6 @@ public class IWallet {
                             
                             let converted = dict.objectForKey("converted") as! NSNumber
                             
-                            print("total \(total)")
-                            
                             completion(status: "Success", total: total as Int, raw: raw as Int, converted: converted as Double)
                             
                         }
@@ -92,8 +86,6 @@ public class IWallet {
                     
                 }
             } catch {
-                print(error)
-                print(NSString(data: data!, encoding: NSUTF8StringEncoding))
                 
                 completion(status: "Fail", total: 0, raw: 0, converted: 0)
                 
@@ -101,7 +93,6 @@ public class IWallet {
             
         }
         
-        task.resume()
     }
     
 }

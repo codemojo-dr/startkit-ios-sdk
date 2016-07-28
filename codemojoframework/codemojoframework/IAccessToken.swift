@@ -31,7 +31,6 @@ public class IAccessToken {
         }
         
         let url:NSURL = NSURL(string: urlString+"oauth/app")!
-        let session = NSURLSession.sharedSession()
         
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "POST"
@@ -40,9 +39,13 @@ public class IAccessToken {
         let paramString = "app_token=\(app_token)&customer_id=\(customer_id)"
         request.HTTPBody = paramString.dataUsingEncoding(NSUTF8StringEncoding)
         
-        let task = session.dataTaskWithRequest(request) {
-            (
-            let data, let response, let error) in
+        
+        
+        
+        
+        let manager = APIManager()
+        
+        manager.Start(request) { (data, response, error) in
             
             guard let _:NSData = data, let _:NSURLResponse = response  where error == nil else {
                 
@@ -58,16 +61,12 @@ public class IAccessToken {
                         
                         let access_token = responseObject["access_token"] as! String
                         
-                        print("access token \(access_token)")
-                        
                         completion(status: "Success", access_token: access_token)
                         
                     }
                     
                 }
             } catch {
-                print(error)
-                print(NSString(data: data!, encoding: NSUTF8StringEncoding))
                 
                 completion(status: "Fail", access_token: "")
                 
@@ -75,7 +74,7 @@ public class IAccessToken {
             
         }
         
-        task.resume()
+        
         
     }
     
