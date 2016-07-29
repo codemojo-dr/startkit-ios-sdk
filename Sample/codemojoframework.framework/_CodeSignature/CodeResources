@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/codemojoframework-Swift.h</key>
 		<data>
-		iZ0p4ETGiHGHsyB+ARNvtYaUckw=
+		1ZmsAL84pBsUwEtGKddy2xNNrC0=
 		</data>
 		<key>Headers/codemojoframework.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/codemojoframework.swiftmodule/arm.swiftmodule</key>
 		<data>
-		zU5dG3i+1uwgv8SyLSS6qLC7BqA=
+		J8CnfYbcOVpcc6RtKKi5+Ht/vYU=
 		</data>
 		<key>Modules/codemojoframework.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/codemojoframework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		XhUdiSu1a2mD5wNJ5YwrpYFacF4=
+		5rZf0a1PoWelHnGBgxbGLXd0XQc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>StoryBoard.storyboardc/pAF-fc-onr-view-56U-wS-rpH.nib</key>
 		<data>
-		AwEi3v4z+iEfLE7wDaADNWVor+E=
+		BPkpNnXxtxy7md2lavp3s+oA1rw=
 		</data>
 		<key>StoryBoard.storyboardc/referralview.nib</key>
 		<data>
-		tpFV8eDQxOxqDd4dM8jhnFYF+yE=
+		2xvOJ/H9X4I34n//ITRmxt0R4l4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,11 +59,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iZ0p4ETGiHGHsyB+ARNvtYaUckw=
+			1ZmsAL84pBsUwEtGKddy2xNNrC0=
 			</data>
 			<key>hash2</key>
 			<data>
-			zx9+NsTcEQEgcGXb18XTP7cZ2UWpOTg2RsMCdm/f6X0=
+			yDDaUaLPRFPhZd4B/U0k5rWwSQxlTP01vsbq+kDybOA=
 			</data>
 		</dict>
 		<key>Headers/codemojoframework.h</key>
@@ -92,11 +92,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zU5dG3i+1uwgv8SyLSS6qLC7BqA=
+			J8CnfYbcOVpcc6RtKKi5+Ht/vYU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jn3Els0JjD0hM9cZNIaDq7eBznhK2tIqKTEJOKhL9eQ=
+			hbVhbpee3i9iVb5WROSZYdREw5gbxDhLTeNxS4pidDo=
 			</data>
 		</dict>
 		<key>Modules/codemojoframework.swiftmodule/arm64.swiftdoc</key>
@@ -114,11 +114,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XhUdiSu1a2mD5wNJ5YwrpYFacF4=
+			5rZf0a1PoWelHnGBgxbGLXd0XQc=
 			</data>
 			<key>hash2</key>
 			<data>
-			3WAz5eI53P/fb/2rRvInrG+Yh9qZcca6kYzzPCYCCAc=
+			QA2D1zv5FJzYY3TaDbXGI1QNR4TqpExZdkCM5F9+dcY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -158,22 +158,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AwEi3v4z+iEfLE7wDaADNWVor+E=
+			BPkpNnXxtxy7md2lavp3s+oA1rw=
 			</data>
 			<key>hash2</key>
 			<data>
-			qkpLRAF7la0qpCL8MasXqFikxvPacJfu0Ho8E+aYZwA=
+			P0Rc6xcCf/TtjwXI66XgtR0xvdb4P3DiB2mNmeiYSEQ=
 			</data>
 		</dict>
 		<key>StoryBoard.storyboardc/referralview.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tpFV8eDQxOxqDd4dM8jhnFYF+yE=
+			2xvOJ/H9X4I34n//ITRmxt0R4l4=
 			</data>
 			<key>hash2</key>
 			<data>
-			bsXZd3Y5wNgGH8vqEdFCT97TJVr4b1GihKRcylKChK4=
+			KQZv2wXxXWT1fxK6wRJCLZDG54WZwI8AugDSt/cJr4E=
 			</data>
 		</dict>
 	</dict>

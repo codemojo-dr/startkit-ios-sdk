@@ -40,10 +40,25 @@ class DashboardViewController: UIViewController {
         
         // call framework's viewcontroller for referral view
         
-        let frameworkBundle = NSBundle(identifier: "com.abservetech.codemojoframework")
+       /* let frameworkBundle = NSBundle(identifier: "com.abservetech.codemojoframework")
         let storyboard = UIStoryboard(name: "StoryBoard", bundle: frameworkBundle)
         
         let viewcontroller = (storyboard.instantiateViewControllerWithIdentifier("referralview")) as UIViewController
+        
+        // pass data to framework
+        
+        userid = appDelegate.userid
+        Access_token = appDelegate.Access_token
+        env_type = appDelegate.env_type
+        
+        ////////////////////////
+        
+        self.navigationController?.pushViewController(viewcontroller, animated: true) */
+        
+        let storyboard = UIStoryboard (
+            name: "StoryBoard", bundle: NSBundle(forClass: ReferralViewController.self)
+        )
+        let viewcontroller = storyboard.instantiateInitialViewController()! as UIViewController
         
         // pass data to framework
         

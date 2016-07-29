@@ -14,7 +14,7 @@ public var env_type:Int = 0
 public var referralurl = ""
 public var referralcode = ""
 
-class ReferralViewController: UIViewController, UITextFieldDelegate {
+public class ReferralViewController: UIViewController, UITextFieldDelegate {
 
    // let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
@@ -28,7 +28,7 @@ class ReferralViewController: UIViewController, UITextFieldDelegate {
     
     weak var activeField: UITextField?
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
 
         
@@ -56,21 +56,21 @@ class ReferralViewController: UIViewController, UITextFieldDelegate {
     }
 
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    public func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override public func viewWillAppear(animated: Bool) {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ReferralViewController.keyboardDidShow(_:)), name: UIKeyboardDidShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ReferralViewController.keyboardWillBeHidden(_:)), name: UIKeyboardWillHideNotification, object: nil)
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
+    public func textFieldDidEndEditing(textField: UITextField) {
         self.activeField = nil
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
+    public func textFieldDidBeginEditing(textField: UITextField) {
         self.activeField = textField
     }
     
@@ -145,7 +145,7 @@ class ReferralViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    override func didReceiveMemoryWarning() {
+    override public func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
