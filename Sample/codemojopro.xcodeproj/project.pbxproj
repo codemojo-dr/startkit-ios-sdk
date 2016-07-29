@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		904018761D4B904700EDCB51 /* codemojoframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 904018751D4B904700EDCB51 /* codemojoframework.framework */; };
-		904018771D4B904700EDCB51 /* codemojoframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 904018751D4B904700EDCB51 /* codemojoframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		904018801D4B99AE00EDCB51 /* codemojoframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9040187F1D4B99AE00EDCB51 /* codemojoframework.framework */; };
+		904018811D4B99AE00EDCB51 /* codemojoframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9040187F1D4B99AE00EDCB51 /* codemojoframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		907D24A61D3A0365009C18B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D24A51D3A0365009C18B0 /* AppDelegate.swift */; };
 		907D24A81D3A0365009C18B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D24A71D3A0365009C18B0 /* ViewController.swift */; };
 		907D24AB1D3A0365009C18B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 907D24A91D3A0365009C18B0 /* Main.storyboard */; };
@@ -39,13 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		904018781D4B904700EDCB51 /* Embed Frameworks */ = {
+		904018821D4B99AE00EDCB51 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				904018771D4B904700EDCB51 /* codemojoframework.framework in Embed Frameworks */,
+				904018811D4B99AE00EDCB51 /* codemojoframework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		904018751D4B904700EDCB51 /* codemojoframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = codemojoframework.framework; path = ../codemojoframework.framework; sourceTree = "<group>"; };
+		9040187F1D4B99AE00EDCB51 /* codemojoframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = codemojoframework.framework; sourceTree = "<group>"; };
 		907D24A21D3A0365009C18B0 /* codemojopro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codemojopro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907D24A51D3A0365009C18B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		907D24A71D3A0365009C18B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				904018761D4B904700EDCB51 /* codemojoframework.framework in Frameworks */,
+				904018801D4B99AE00EDCB51 /* codemojoframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +101,7 @@
 		907D24991D3A0365009C18B0 = {
 			isa = PBXGroup;
 			children = (
+				9040187F1D4B99AE00EDCB51 /* codemojoframework.framework */,
 				907D24A41D3A0365009C18B0 /* codemojopro */,
 				907D24BC1D3A0365009C18B0 /* codemojoproTests */,
 				907D24C71D3A0365009C18B0 /* codemojoproUITests */,
@@ -130,7 +131,6 @@
 				907D24B11D3A0365009C18B0 /* LaunchScreen.storyboard */,
 				907D24B41D3A0365009C18B0 /* Info.plist */,
 				907D24AC1D3A0365009C18B0 /* codemojopro.xcdatamodeld */,
-				904018751D4B904700EDCB51 /* codemojoframework.framework */,
 			);
 			path = codemojopro;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 				907D249E1D3A0365009C18B0 /* Sources */,
 				907D249F1D3A0365009C18B0 /* Frameworks */,
 				907D24A01D3A0365009C18B0 /* Resources */,
-				904018781D4B904700EDCB51 /* Embed Frameworks */,
+				904018821D4B99AE00EDCB51 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

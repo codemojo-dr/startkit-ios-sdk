@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/codemojoframework.swiftmodule/arm.swiftmodule</key>
 		<data>
-		3J5BFkij1nI3IKSq8blL8leyKbM=
+		zU5dG3i+1uwgv8SyLSS6qLC7BqA=
 		</data>
 		<key>Modules/codemojoframework.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/codemojoframework.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		cTlLd22/d7Zi3WDjN2sGcE7Er3g=
+		XhUdiSu1a2mD5wNJ5YwrpYFacF4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>StoryBoard.storyboardc/pAF-fc-onr-view-56U-wS-rpH.nib</key>
 		<data>
-		Sgy9WO71f3fIFZba8kODf5d+eAE=
+		AwEi3v4z+iEfLE7wDaADNWVor+E=
 		</data>
 		<key>StoryBoard.storyboardc/referralview.nib</key>
 		<data>
-		Hi+NGl+vbpIgrw8aOfiiA4KHSrw=
+		tpFV8eDQxOxqDd4dM8jhnFYF+yE=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -92,11 +92,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3J5BFkij1nI3IKSq8blL8leyKbM=
+			zU5dG3i+1uwgv8SyLSS6qLC7BqA=
 			</data>
 			<key>hash2</key>
 			<data>
-			HLqvju2hoMSsLL9C2+0d3SGIn2FxRfnODP66fqcU1jw=
+			Jn3Els0JjD0hM9cZNIaDq7eBznhK2tIqKTEJOKhL9eQ=
 			</data>
 		</dict>
 		<key>Modules/codemojoframework.swiftmodule/arm64.swiftdoc</key>
@@ -114,11 +114,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cTlLd22/d7Zi3WDjN2sGcE7Er3g=
+			XhUdiSu1a2mD5wNJ5YwrpYFacF4=
 			</data>
 			<key>hash2</key>
 			<data>
-			cP6Bfd3p/Hpk0ARE4tY2k2pPI9irpdE0358QXpsEAWo=
+			3WAz5eI53P/fb/2rRvInrG+Yh9qZcca6kYzzPCYCCAc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -158,22 +158,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Sgy9WO71f3fIFZba8kODf5d+eAE=
+			AwEi3v4z+iEfLE7wDaADNWVor+E=
 			</data>
 			<key>hash2</key>
 			<data>
-			2QtnX2Hhppb0//rTy8P1YZFYlUbcPqlVIGVgK4TRMzo=
+			qkpLRAF7la0qpCL8MasXqFikxvPacJfu0Ho8E+aYZwA=
 			</data>
 		</dict>
 		<key>StoryBoard.storyboardc/referralview.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Hi+NGl+vbpIgrw8aOfiiA4KHSrw=
+			tpFV8eDQxOxqDd4dM8jhnFYF+yE=
 			</data>
 			<key>hash2</key>
 			<data>
-			f3kUBoKL4NgbBWDMZlPUe+PMPkFq98whmWPvim/9Ni0=
+			bsXZd3Y5wNgGH8vqEdFCT97TJVr4b1GihKRcylKChK4=
 			</data>
 		</dict>
 	</dict>
