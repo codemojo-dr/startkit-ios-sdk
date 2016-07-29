@@ -17,7 +17,7 @@
                BlueprintIdentifier = "907D243D1D3A01F4009C18B0"
                BuildableName = "codemojoframework.framework"
                BlueprintName = "codemojoframework"
-               ReferencedContainer = "container:codemojoframework.xcodeproj">
+               ReferencedContainer = "container:codemojo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "907D24471D3A01F4009C18B0"
                BuildableName = "codemojoframeworkTests.xctest"
                BlueprintName = "codemojoframeworkTests"
-               ReferencedContainer = "container:codemojoframework.xcodeproj">
+               ReferencedContainer = "container:codemojo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "907D243D1D3A01F4009C18B0"
             BuildableName = "codemojoframework.framework"
             BlueprintName = "codemojoframework"
-            ReferencedContainer = "container:codemojoframework.xcodeproj">
+            ReferencedContainer = "container:codemojo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -67,7 +67,7 @@
             BlueprintIdentifier = "907D243D1D3A01F4009C18B0"
             BuildableName = "codemojoframework.framework"
             BlueprintName = "codemojoframework"
-            ReferencedContainer = "container:codemojoframework.xcodeproj">
+            ReferencedContainer = "container:codemojo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -85,7 +85,7 @@
             BlueprintIdentifier = "907D243D1D3A01F4009C18B0"
             BuildableName = "codemojoframework.framework"
             BlueprintName = "codemojoframework"
-            ReferencedContainer = "container:codemojoframework.xcodeproj">
+            ReferencedContainer = "container:codemojo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

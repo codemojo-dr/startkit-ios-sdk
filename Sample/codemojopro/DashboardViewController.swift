@@ -41,7 +41,7 @@ class DashboardViewController: UIViewController {
         // call framework's viewcontroller for referral view
         
         let frameworkBundle = NSBundle(identifier: "com.abservetech.codemojoframework")
-        let storyboard = UIStoryboard(name: "Storyboard", bundle: frameworkBundle)
+        let storyboard = UIStoryboard(name: "StoryBoard", bundle: frameworkBundle)
         
         let viewcontroller = (storyboard.instantiateViewControllerWithIdentifier("referralview")) as UIViewController
         
