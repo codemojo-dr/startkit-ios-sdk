@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pAF-fc-onr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Referral View Controller-->
+        <scene sceneID="10y-SY-baD">
+            <objects>
+                <viewController storyboardIdentifier="referralview" id="pAF-fc-onr" customClass="ReferralViewController" customModule="codemojoframework" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PMY-OK-jzK"/>
+                        <viewControllerLayoutGuide type="bottom" id="8hq-SG-QeI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="56U-wS-rpH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feg-fo-XQz">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRm-mk-VvB">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Referral-icons.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JZ5-PT-3pi">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="215"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="215" id="c6P-6k-IJE"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="34534543" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kht-NQ-xs1">
+                                                <rect key="frame" x="67" y="81" width="187" height="37"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.68133081900000003" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="187" id="bn7-Lz-QYg"/>
+                                                    <constraint firstAttribute="height" constant="37" id="iE9-t2-YiB"/>
+                                                </constraints>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your friend will get Rs. and you will get Rs. after their first transaction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEv-1F-lNY">
+                                                <rect key="frame" x="0.0" y="220" width="320" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJ7-kc-6JK">
+                                                <rect key="frame" x="67" y="348" width="187" height="30"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.34781788790000001" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="UC6-kb-RlD"/>
+                                                </constraints>
+                                                <state key="normal" title="INVITE FRIENDS">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="inivitefrnds:" destination="pAF-fc-onr" eventType="touchUpInside" id="nlt-js-DTd"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Have a Referral code?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AkZ-iw-ge4">
+                                                <rect key="frame" x="39" y="393" width="187" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="jmt-Lq-GhX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIv-4l-2bK">
+                                                <rect key="frame" x="10" y="0.0" width="46" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="46" id="mnu-26-Vd3"/>
+                                                    <constraint firstAttribute="height" constant="30" id="xrp-OT-Vpc"/>
+                                                </constraints>
+                                                <state key="normal" title="Exit"/>
+                                                <connections>
+                                                    <action selector="exitact:" destination="pAF-fc-onr" eventType="touchUpInside" id="q45-qh-4Lb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93f-Ia-gIV">
+                                                <rect key="frame" x="257" y="393" width="46" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="9qa-Ha-uBD"/>
+                                                    <constraint firstAttribute="width" constant="46" id="p3U-1v-9hJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Done"/>
+                                                <connections>
+                                                    <action selector="usereferralact:" destination="pAF-fc-onr" eventType="touchUpInside" id="7vX-R1-lGW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="OJ7-kc-6JK" secondAttribute="trailing" constant="66" id="17h-o2-r6T"/>
+                                            <constraint firstItem="AkZ-iw-ge4" firstAttribute="leading" secondItem="SRm-mk-VvB" secondAttribute="leading" constant="39" id="1gY-eE-Q10"/>
+                                            <constraint firstItem="uIv-4l-2bK" firstAttribute="leading" secondItem="SRm-mk-VvB" secondAttribute="leading" constant="10" id="CCC-Nz-KCO"/>
+                                            <constraint firstItem="JZ5-PT-3pi" firstAttribute="leading" secondItem="SRm-mk-VvB" secondAttribute="leading" id="DMS-Je-0pk"/>
+                                            <constraint firstItem="AkZ-iw-ge4" firstAttribute="top" secondItem="OJ7-kc-6JK" secondAttribute="bottom" constant="15" id="HGS-YO-2c0"/>
+                                            <constraint firstAttribute="trailing" secondItem="JZ5-PT-3pi" secondAttribute="trailing" id="VWZ-f5-L0e"/>
+                                            <constraint firstItem="Kht-NQ-xs1" firstAttribute="top" secondItem="SRm-mk-VvB" secondAttribute="top" constant="81" id="aLo-K2-GPT"/>
+                                            <constraint firstItem="Kht-NQ-xs1" firstAttribute="centerX" secondItem="SRm-mk-VvB" secondAttribute="centerX" id="aaY-Ol-SOe"/>
+                                            <constraint firstAttribute="trailing" secondItem="AkZ-iw-ge4" secondAttribute="trailing" constant="94" id="dBO-wa-jXI"/>
+                                            <constraint firstItem="uIv-4l-2bK" firstAttribute="top" secondItem="SRm-mk-VvB" secondAttribute="top" id="fUO-kE-2Cq"/>
+                                            <constraint firstAttribute="bottom" secondItem="93f-Ia-gIV" secondAttribute="bottom" constant="37" id="k38-cW-BWq"/>
+                                            <constraint firstAttribute="trailing" secondItem="93f-Ia-gIV" secondAttribute="trailing" constant="17" id="mYO-RZ-cC5"/>
+                                            <constraint firstItem="OJ7-kc-6JK" firstAttribute="leading" secondItem="SRm-mk-VvB" secondAttribute="leading" constant="67" id="pt4-JA-TaD"/>
+                                            <constraint firstItem="JZ5-PT-3pi" firstAttribute="top" secondItem="SRm-mk-VvB" secondAttribute="top" id="rV6-RJ-b5C"/>
+                                            <constraint firstAttribute="bottom" secondItem="AkZ-iw-ge4" secondAttribute="bottom" constant="37" id="xtb-Y0-X56"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="SRm-mk-VvB" secondAttribute="bottom" id="LLO-fj-Vu2"/>
+                                    <constraint firstItem="SRm-mk-VvB" firstAttribute="width" secondItem="feg-fo-XQz" secondAttribute="width" id="P9b-Ad-1Jc"/>
+                                    <constraint firstItem="SRm-mk-VvB" firstAttribute="height" secondItem="feg-fo-XQz" secondAttribute="height" id="a4P-WK-AtF"/>
+                                    <constraint firstItem="SRm-mk-VvB" firstAttribute="top" secondItem="feg-fo-XQz" secondAttribute="top" id="aIF-dB-p9I"/>
+                                    <constraint firstAttribute="trailing" secondItem="SRm-mk-VvB" secondAttribute="trailing" id="uKK-lZ-5Wu"/>
+                                    <constraint firstItem="SRm-mk-VvB" firstAttribute="leading" secondItem="feg-fo-XQz" secondAttribute="leading" id="w5h-xP-izc"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="feg-fo-XQz" secondAttribute="trailing" id="02w-WU-Zgz"/>
+                            <constraint firstItem="feg-fo-XQz" firstAttribute="top" secondItem="PMY-OK-jzK" secondAttribute="bottom" id="5oZ-TV-mG2"/>
+                            <constraint firstItem="feg-fo-XQz" firstAttribute="leading" secondItem="56U-wS-rpH" secondAttribute="leading" id="KkZ-od-qkd"/>
+                            <constraint firstItem="8hq-SG-QeI" firstAttribute="top" secondItem="feg-fo-XQz" secondAttribute="bottom" id="jSs-zq-mvQ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="earnlabel" destination="lEv-1F-lNY" id="pCu-7V-DY3"/>
+                        <outlet property="entreferraltxt" destination="AkZ-iw-ge4" id="IO4-TE-zcP"/>
+                        <outlet property="referraltext" destination="Kht-NQ-xs1" id="aRl-tc-Hd7"/>
+                        <outlet property="scrollview" destination="feg-fo-XQz" id="UZx-ZZ-ddX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ook-Kf-FPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1594" y="334"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Referral-icons.jpg" width="300" height="290"/>
+    </resources>
+</document>
