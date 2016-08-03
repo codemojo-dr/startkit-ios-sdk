@@ -17,8 +17,6 @@
 		907D24C91D3A0365009C18B0 /* codemojoproUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907D24C81D3A0365009C18B0 /* codemojoproUITests.swift */; };
 		909783881D3A4D6600AE91AC /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909783871D3A4D6600AE91AC /* DashboardViewController.swift */; };
 		90B662161D45F7A6003D1867 /* GamificationdemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B662151D45F7A6003D1867 /* GamificationdemoViewController.swift */; };
-		90EB478B1D4C865D00A0F59E /* codemojoframework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90EB478A1D4C865D00A0F59E /* codemojoframework.framework */; };
-		90EB478C1D4C865D00A0F59E /* codemojoframework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90EB478A1D4C865D00A0F59E /* codemojoframework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,20 +36,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		90EB478D1D4C865D00A0F59E /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				90EB478C1D4C865D00A0F59E /* codemojoframework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		907D24A21D3A0365009C18B0 /* codemojopro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codemojopro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		907D24A51D3A0365009C18B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +53,6 @@
 		907D24CA1D3A0365009C18B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		909783871D3A4D6600AE91AC /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		90B662151D45F7A6003D1867 /* GamificationdemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamificationdemoViewController.swift; sourceTree = "<group>"; };
-		90EB478A1D4C865D00A0F59E /* codemojoframework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = codemojoframework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90EB478B1D4C865D00A0F59E /* codemojoframework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +83,6 @@
 		907D24991D3A0365009C18B0 = {
 			isa = PBXGroup;
 			children = (
-				90EB478A1D4C865D00A0F59E /* codemojoframework.framework */,
 				907D24A41D3A0365009C18B0 /* codemojopro */,
 				907D24BC1D3A0365009C18B0 /* codemojoproTests */,
 				907D24C71D3A0365009C18B0 /* codemojoproUITests */,
@@ -163,7 +144,6 @@
 				907D249E1D3A0365009C18B0 /* Sources */,
 				907D249F1D3A0365009C18B0 /* Frameworks */,
 				907D24A01D3A0365009C18B0 /* Resources */,
-				90EB478D1D4C865D00A0F59E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -363,8 +343,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: venkatesh kumar (S8B9378283)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: venkatesh kumar (S8B9378283)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -386,7 +366,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "c3756584-ce39-4709-ab26-4f5399a02193";
+				PROVISIONING_PROFILE = "346f76b4-bd9a-4c0c-b27f-1e437b603d71";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -411,8 +391,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: venkatesh kumar (S8B9378283)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: venkatesh kumar (S8B9378283)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -427,7 +407,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "c3756584-ce39-4709-ab26-4f5399a02193";
+				PROVISIONING_PROFILE = "346f76b4-bd9a-4c0c-b27f-1e437b603d71";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -438,8 +418,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: venkatesh kumar (S8B9378283)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: venkatesh kumar (S8B9378283)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/codemojopro",
@@ -450,7 +430,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abservetech.codemojo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c3756584-ce39-4709-ab26-4f5399a02193";
+				PROVISIONING_PROFILE = "346f76b4-bd9a-4c0c-b27f-1e437b603d71";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -459,8 +439,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: venkatesh kumar (S8B9378283)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: venkatesh kumar (S8B9378283)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/codemojopro",
@@ -471,7 +451,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abservetech.codemojo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c3756584-ce39-4709-ab26-4f5399a02193";
+				PROVISIONING_PROFILE = "346f76b4-bd9a-4c0c-b27f-1e437b603d71";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -480,13 +460,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: venkatesh kumar (S8B9378283)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: venkatesh kumar (S8B9378283)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
 				INFOPLIST_FILE = codemojoproTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abservetech.codemojoproTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c3756584-ce39-4709-ab26-4f5399a02193";
+				PROVISIONING_PROFILE = "346f76b4-bd9a-4c0c-b27f-1e437b603d71";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/codemojopro.app/codemojopro";
 			};
 			name = Debug;
@@ -495,13 +475,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: venkatesh kumar (S8B9378283)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: venkatesh kumar (S8B9378283)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
 				INFOPLIST_FILE = codemojoproTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abservetech.codemojoproTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c3756584-ce39-4709-ab26-4f5399a02193";
+				PROVISIONING_PROFILE = "346f76b4-bd9a-4c0c-b27f-1e437b603d71";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/codemojopro.app/codemojopro";
 			};
 			name = Release;
@@ -509,13 +489,13 @@
 		907D24D41D3A0365009C18B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: venkatesh kumar (S8B9378283)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: venkatesh kumar (S8B9378283)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
 				INFOPLIST_FILE = codemojoproUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abservetech.codemojoproUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c3756584-ce39-4709-ab26-4f5399a02193";
+				PROVISIONING_PROFILE = "346f76b4-bd9a-4c0c-b27f-1e437b603d71";
 				TEST_TARGET_NAME = codemojopro;
 			};
 			name = Debug;
@@ -523,13 +503,13 @@
 		907D24D51D3A0365009C18B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: venkatesh kumar (S8B9378283)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: venkatesh kumar (S8B9378283)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: venkatesh kumar (3TW8J27997)";
 				INFOPLIST_FILE = codemojoproUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abservetech.codemojoproUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "c3756584-ce39-4709-ab26-4f5399a02193";
+				PROVISIONING_PROFILE = "346f76b4-bd9a-4c0c-b27f-1e437b603d71";
 				TEST_TARGET_NAME = codemojopro;
 			};
 			name = Release;
